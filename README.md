@@ -45,8 +45,8 @@ The application is built with:
 ### Using Docker
 
 ```bash
-git clone https://github.com/yourusername/mama-doner.git
-cd mama-doner
+git clone https://github.com/yourusername/doner.git
+cd doner
 cp .env.example .env
 # Edit .env with your configuration
 docker-compose up -d --build
@@ -57,8 +57,8 @@ The application will be available at http://localhost:8080
 ### Local Development
 
 ```bash
-git clone https://github.com/yourusername/mama-doner.git
-cd mama-doner
+git clone https://github.com/yourusername/doner.git
+cd doner
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -97,7 +97,7 @@ DB_NAME=data/orders.db
 ## Project Structure
 
 ```
-mama-doner/
+doner/
 ├── app/
 │   ├── main.py                 # Application entry point
 │   ├── core/config.py          # Configuration management
@@ -162,8 +162,8 @@ docker-compose logs -f
 ### Manual VPS Deployment
 
 ```bash
-git clone https://github.com/yourusername/mama-doner.git
-cd mama-doner
+git clone https://github.com/yourusername/doner.git
+cd doner
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -176,13 +176,13 @@ nohup python -m app.main > app.log 2>&1 &
 
 Create configuration file:
 ```ini
-[program:mama-doner]
+[program:doner]
 directory=/path/to/doner
 command=/path/to/venv/bin/python -m app.main
 autostart=true
 autorestart=true
 redirect_stderr=true
-stdout_logfile=/var/log/mama-doner.log
+stdout_logfile=/var/log/doner.log
 ```
 
 Then:
@@ -250,5 +250,6 @@ Contributions are welcome:
 See [PUBLICATION_INSTRUCTIONS.md](PUBLICATION_INSTRUCTIONS.md) for GitHub publication steps.
 
 rqn
+
 
 
