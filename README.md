@@ -9,7 +9,7 @@ Full-featured food delivery application built as a Telegram Mini App with embedd
 
 ## Overview
 
-Mama Doner is a complete food ordering system that operates entirely within Telegram. Users can browse menus, manage shopping carts, and process payments without leaving the messaging app. Administrators can manage menu items through simple bot commands.
+Doner is a complete food ordering system that operates entirely within Telegram. Users can browse menus, manage shopping carts, and process payments without leaving the messaging app. Administrators can manage menu items through simple bot commands.
 
 The application is built with:
 - **Aiogram 3.x** for Telegram bot functionality
@@ -248,6 +248,7 @@ Contributions are welcome:
 ---
 
 rqn
+
 
 
 
