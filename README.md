@@ -7,6 +7,16 @@
 
 Full-featured food delivery application built as a Telegram Mini App with embedded web interface.
 
+## Screenshots
+
+<p align="center">
+  <img src="assets/main_menu.jpg" alt="Main Menu" width="30%">
+  &nbsp; &nbsp;
+  <img src="assets/add_to_cart.jpg" alt="Product Details" width="30%">
+  &nbsp; &nbsp;
+  <img src="assets/confirm_order.jpg" alt="Cart Checkout" width="30%">
+</p>
+
 ## Overview
 
 Doner is a complete food ordering system that operates entirely within Telegram. Users can browse menus, manage shopping carts, and process payments without leaving the messaging app. Administrators can manage menu items through simple bot commands.
@@ -248,6 +258,7 @@ Contributions are welcome:
 ---
 
 rqn
+
 
 
 
