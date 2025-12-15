@@ -1,4 +1,4 @@
-# Mama Doner - Telegram Mini App
+# Doner - Telegram Mini App
 
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=flat-square&logo=python)
 ![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=flat-square&logo=docker)
@@ -177,7 +177,7 @@ nohup python -m app.main > app.log 2>&1 &
 Create configuration file:
 ```ini
 [program:mama-doner]
-directory=/path/to/mama-doner
+directory=/path/to/doner
 command=/path/to/venv/bin/python -m app.main
 autostart=true
 autorestart=true
@@ -189,7 +189,7 @@ Then:
 ```bash
 supervisorctl reread
 supervisorctl update
-supervisorctl start mama-doner
+supervisorctl start doner
 ```
 
 ## Architecture
@@ -250,4 +250,5 @@ Contributions are welcome:
 See [PUBLICATION_INSTRUCTIONS.md](PUBLICATION_INSTRUCTIONS.md) for GitHub publication steps.
 
 rqn
+
 
