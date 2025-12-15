@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    image: miniapp/telegram-bot:v1.0
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    container_name: miniapp_telegram_bot
+    restart: always
+    ports:
+      - "${WEB_SERVER_PORT:-8080}:8080"
+    volumes:
+      - ./data:/app/data
+    env_file:
+      - .env
+    environment:
+      - DB_NAME=/app/data/orders.db
+      - WEB_SERVER_PORT=8080
+      - WEBAPP_URL=${WEBAPP_URL}
+      - BOT_TOKEN=${BOT_TOKEN}
+      - PROVIDER_TOKEN=${PROVIDER_TOKEN}
+      - CURRENCY=${CURRENCY}
+      - ADMIN_ID=${ADMIN_ID}
