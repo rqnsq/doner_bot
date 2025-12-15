@@ -162,7 +162,7 @@ docker-compose logs -f
 ### Manual VPS Deployment
 
 ```bash
-git clone https://github.com/yourusername/doner.git
+git clone https://github.com/rqnsq/doner_bot
 cd doner
 python3 -m venv venv
 source venv/bin/activate
@@ -247,9 +247,8 @@ Contributions are welcome:
 
 ---
 
-See [PUBLICATION_INSTRUCTIONS.md](PUBLICATION_INSTRUCTIONS.md) for GitHub publication steps.
-
 rqn
+
 
 
 
